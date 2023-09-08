@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+seaborn
+google-cloud-bigquery
+google-auth-oauthlib
+scipy
+matplotlib
