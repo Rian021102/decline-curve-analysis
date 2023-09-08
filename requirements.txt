@@ -6,3 +6,4 @@ google-cloud-bigquery
 google-auth-oauthlib
 scipy
 matplotlib
+db-dtypes
