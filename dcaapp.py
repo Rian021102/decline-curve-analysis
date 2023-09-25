@@ -7,13 +7,10 @@ from google.oauth2 import service_account
 from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
 
-# Set the path to your JSON key file
-credentials_path = "intricate-idiom-379506-21563d575ba3.json"
-
-# Load the credentials from the JSON key file
-credentials = service_account.Credentials.from_service_account_file(credentials_path)
-
-# Create the BigQuery client with the loaded credentials
+# Create API client.
+credentials = service_account.Credentials.from_service_account_info(
+    st.secrets["gcp_service_account"]
+)
 client = bigquery.Client(credentials=credentials)
 
 QUERY = """
